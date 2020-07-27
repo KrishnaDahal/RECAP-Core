@@ -1,0 +1,25 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ar">locale/recap_ar.qm</file>
+        <file alias="bg">locale/recap_bg.qm</file>
+        <file alias="de">locale/recap_de.qm</file>
+        <file alias="en">locale/recap_en.qm</file>
+        <file alias="es">locale/recap_es.qm</file>
+        <file alias="fi">locale/recap_fi.qm</file>
+        <file alias="fr">locale/recap_fr.qm</file>
+        <file alias="it">locale/recap_it.qm</file>
+        <file alias="ja">locale/recap_ja.qm</file>
+        <file alias="ko">locale/recap_ko.qm</file>
+        <file alias="nl">locale/recap_nl.qm</file>
+        <file alias="pl">locale/recap_pl.qm</file>
+        <file alias="pt">locale/recap_pt.qm</file>
+        <file alias="ro">locale/recap_ro.qm</file>
+        <file alias="ru">locale/recap_ru.qm</file>
+        <file alias="sk">locale/recap_sk.qm</file>
+        <file alias="th">locale/recap_th.qm</file>
+        <file alias="tr">locale/recap_tr.qm</file>
+        <file alias="vi">locale/recap_vi.qm</file>
+        <file alias="zh_CN">locale/recap_zh_CN.qm</file>
+        <file alias="zh_TW">locale/recap_zh_TW.qm</file>
+    </qresource>
+</RCC>

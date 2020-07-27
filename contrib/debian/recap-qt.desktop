@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Recap Core
+Comment=Recap P2P Cryptocurrency
+Comment[de]=Verbinde mit dem Recap peer-to-peer Netzwerk
+Comment[fr]=Recap, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Recap, eşten eşe kriptografik sanal para birimi
+Exec=recap-qt %u
+Terminal=false
+Type=Application
+Icon=recap128
+MimeType=x-scheme-handler/recap;
+Categories=Office;Finance;

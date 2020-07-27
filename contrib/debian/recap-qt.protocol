@@ -1,0 +1,11 @@
+[Protocol]
+exec=recap-qt '%u'
+protocol=recap
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

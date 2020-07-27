@@ -1,0 +1,22 @@
+[Unit]
+Description=Recap's distributed currency daemon
+After=network.target
+
+[Service]
+User=recapcore
+Group=recapcore
+
+Type=forking
+PIDFile=/var/lib/recapd/recapd.pid
+ExecStart=/usr/bin/recapd -daemon -pid=/var/lib/recapd/recapd.pid \
+-conf=/etc/recapcore/recap.conf -datadir=/var/lib/recapd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

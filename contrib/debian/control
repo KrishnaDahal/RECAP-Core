@@ -1,0 +1,70 @@
+Source: recap
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@recap.org>
+Uploaders: Holger Schinzel <holger@recap.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.47),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.47),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.47),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.47),
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qt4-qmake, libqt4-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python,
+ libzmq3-dev
+Standards-Version: 3.9.2
+Homepage: https://www.recap.org/
+Vcs-Git: git://github.com/recappay/recap.git
+Vcs-Browser: https://github.com/recappay/recap
+
+Package: recapd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Recap is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Recap uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Recap Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, recapd, and the CLI tool
+ recap-cli to interact with the daemon.
+
+Package: recap-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Recap is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Recap uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Recap Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Recap-Qt, a GUI for Recap based on Qt.
+
+Package: recap-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Recap is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. Recap uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Recap Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides recap-tx, a command-line transaction creation
+ tool which can be used without a recap daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

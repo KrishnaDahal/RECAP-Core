@@ -1,0 +1,6 @@
+usr/local/bin/recap-qt usr/bin
+share/pixmaps/recap32.xpm usr/share/pixmaps
+share/pixmaps/recap16.xpm usr/share/pixmaps
+share/pixmaps/recap128.png usr/share/pixmaps
+debian/recap-qt.desktop usr/share/applications
+debian/recap-qt.protocol usr/share/kde4/services/
